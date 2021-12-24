@@ -41,6 +41,7 @@
 
 body {
     font-size: 15px;
+    padding: 10% 0 10% 0;
 }
 
 a {
@@ -58,7 +59,7 @@ a {
 .container {
     display: flex;
     max-width: 850px;
-    margin: 10vh auto;
+    margin: auto;
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
