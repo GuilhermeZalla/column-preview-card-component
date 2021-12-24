@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/**************/
+
+
+/* 0. Variáveis
+/* 1. Gerais
+/* 2. Container
+/* 3. Sections
+
+
+/**************/
+
+
+/* 0. Variáveis
+/**************/
+
+:root {
+    --color-section-0: hsl(31, 77%, 52%);
+    --color-section-1: hsl(184, 100%, 22%);
+    --color-section-2: hsl(179, 100%, 13%);
+    --color-text: hsla(0, 0%, 100%, 0.75);
+    --color-assets: hsl(0, 0%, 95%);
+    --font-text: 'Lexend Deca', sans-serif;
+    --font-header: 'Big Shoulders Display', cursive;
+}
+
+
+/**************/
+
+
+/* 1. Gerais
+/**************/
+
+body {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/**************/
+
+
+/* 2. Container
+
+/**************/
+
+.container {
+    display: flex;
+    max-width: 850px;
+    margin: 10vh auto;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: block;
+        width: 50%;
+    }
+}
+
+
+/**************/
+
+
+/* 3. Sedans Section
+/**************/
+
+.sedans-section,
+.suvs-section,
+.luxury-section {
+    flex-basis: 35%;
+    padding: 50px;
+}
+
+.sedans-section {
+    background-color: var(--color-section-0);
+    border-radius: 7px 0 0 7px;
+}
+
+.suvs-section {
+    background-color: var(--color-section-1);
+}
+
+.luxury-section {
+    background-color: var(--color-section-2);
+    border-radius: 0 7px 7px 0;
+}
+
+.product-section__header {
+    margin-bottom: 10%;
+}
+
+.product-section__article>.product-section__title {
+    font-family: var(--font-header);
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--color-assets);
+    margin: 0;
+}
+
+.product-section__article>.product-section__info-text {
+    font-family: var(--font-text);
+    font-weight: 400;
+    color: var(--color-text);
+    line-height: .7cm;
+}
+
+.product-section__footer {
+    margin-top: 50%;
+}
+
+.product-section__footer>.product-section__link {
+    font-family: var(--font-text);
+    font-weight: 400;
+    background-color: var(--color-assets);
+    border: 2px solid var(--color-assets);
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+.product-section__footer>.product-section__link:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color-assets);
+}
+
+.sedans-section a {
+    color: var(--color-section-0);
+}
+
+.suvs-section a {
+    color: var(--color-section-1);
+}
+
+.luxury-section a {
+    color: var(--color-section-2);
+}
+
+@media screen and (max-width: 900px) {
+    .sedans-section {
+        border-radius: 7px 7px 0 0;
+    }
+    .luxury-section {
+        border-radius: 0 0 7px 7px;
+    }
+}
+
+
+/**************/
